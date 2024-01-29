@@ -1,0 +1,153 @@
+######### 锚点 start #######
+
+p: &p
+  { type: http, interval: 3600, health-check: { enable: true, url: http://www.apple.com/library/test/success.html, interval: 300 } }
+
+u: &u
+  use:
+    - mineNode
+
+proxy-providers:
+  mineNode:
+    <<: *p
+    url: "https://ghproxy.cc/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt"
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+unified-delay: true
+log-level: info
+ipv6: false
+
+tcp-concurrent: true
+enable-process: true
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 12
+
+geox-url:
+  geoip: "https://ghproxy.cc/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://ghproxy.cc/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://ghproxy.cc/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [ 80, 8080-8880 ]
+      override-destination: true
+    TLS:
+      ports: [ 443, 8443 ]
+    QUIC:
+      ports: [ 443, 8443 ]
+  skip-domain:
+    - "Mijia Cloud"
+
+dns:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+  default-nameserver:
+    - 223.5.5.5
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  fallback:
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - https://doh.dns.sb/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+  - name: "DNS_Hijack"
+    type: dns
+
+proxy-groups:
+  - { name: 🎯 总模式, type: select, proxies: [ 🚀 节点选择,♻️ 自动切换,🔯 故障转移,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 🚀 节点选择, type: select, proxies: [ ♻️ 自动切换,🔯 故障转移,🌎 全球直连 ], <<: *u }
+  - { name: ♻️ 自动切换, <<: *u, tolerance: 2, type: url-test, url: http://www.apple.com/library/test/success.html, interval: 300 }
+  - { name: 🔯 故障转移, <<: *u, tolerance: 2, type: fallback, url: http://www.apple.com/library/test/success.html, interval: 300 }
+  - { name: ♻️ 手动切换, type: select, proxies: [ 🚀 节点选择,🌎 全球直连 ], <<: *u }
+  - { name: 🎬 科学上网, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: Ⓜ️ DNS服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📹 奈飞视频, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📢 谷歌服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📸 国际抖音, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📷 中国抖音, type: select, proxies: [ 🌎 全球直连,🎯 总模式,♻️ 自动切换,♻️ 手动切换 ] }
+  - { name: 🛑 广告拦截, type: select, proxies: [ REJECT,🌎 全球直连 ] }
+  - { name: 🐋 漏网之鱼, type: select, proxies: [ 🎯 总模式,🌎 全球直连 ] }
+  - { name: 🌎 全球直连, type: select, proxies: [ DIRECT ] }
+
+rules:
+  - DOMAIN-SUFFIX,mob.com,🌎 全球直连
+  - DST-PORT,53,DNS_Hijack
+  - GEOIP,lan,🌎 全球直连,no-resolve
+  - DOMAIN-SUFFIX,zkyml.com,🌎 全球直连
+  - PROCESS-NAME,com.zhiliaoapp.musically,📸 国际抖音
+  - PROCESS-NAME,com.ss.android.ugc.aweme,📷 中国抖音
+
+  - AND,((RULE-SET,cn_domain),(RULE-SET,cn_ip)),🌎 全球直连
+
+  - GEOSITE,category-ads-all,🛑 广告拦截
+  - GEOSITE,private,🌎 全球直连
+  - GEOSITE,youtube,📢 谷歌服务
+  - GEOSITE,google,📢 谷歌服务
+  - GEOSITE,twitter,📢 谷歌服务
+  - GEOSITE,telegram,📢 谷歌服务
+  - GEOSITE,pixiv,📹 奈飞视频
+  - GEOSITE,netflix,📹 奈飞视频
+  - GEOSITE,category-scholar-!cn,📢 谷歌服务
+  - GEOSITE,apple,📢 谷歌服务
+  - GEOSITE,biliintl,📢 谷歌服务
+  - GEOSITE,github,🎬 科学上网
+
+  - GEOSITE,onedrive,🌎 全球直连
+  - GEOSITE,microsoft@cn,🌎 全球直连
+  - GEOSITE,apple-cn,🌎 全球直连
+  - GEOSITE,steam@cn,🌎 全球直连
+  - GEOSITE,category-games@cn,🌎 全球直连
+  - GEOSITE,geolocation-!cn,🐋 漏网之鱼
+  - GEOSITE,cn,🌎 全球直连
+
+  - GEOIP,private,🌎 全球直连,no-resolve
+  - GEOIP,telegram,📢 谷歌服务
+  - GEOIP,JP,📢 谷歌服务
+  - GEOIP,CN,🌎 全球直连,no-resolve
+  - DST-PORT,80/8080/443/8443,📢 谷歌服务
+
+  - MATCH,🐋 漏网之鱼
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: yaml}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: yaml}
+rule-providers:
+  cn_domain:
+    <<: *domain
+    url: "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml"
+
+  cn_ip:
+    <<: *ip
+    url: "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.yaml"
