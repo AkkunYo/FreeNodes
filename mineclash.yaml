@@ -1,0 +1,191 @@
+######### 锚点 start #######
+
+p: &p
+  { type: http, interval: 3600, health-check: { enable: true, url: http://www.apple.com/library/test/success.html, interval: 300 } }
+
+u: &u
+  use:
+    - mineNode
+
+proxy-providers:
+  mineNode:
+    <<: *p
+    url: "https://ghp.ci/https://raw.githubusercontent.com/AkkunYo/HysteriaNode/main/mineNode.txt"
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+unified-delay: true
+log-level: info
+ipv6: false
+
+tcp-concurrent: true
+enable-process: true
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 12
+
+geox-url:
+  geoip: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [ 80, 8080-8880 ]
+      override-destination: true
+    TLS:
+      ports: [ 443, 8443 ]
+    QUIC:
+      ports: [ 443, 8443 ]
+  skip-domain:
+    - "Mijia Cloud"
+
+dns:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.0/15
+  fake-ip-filter:
+    - "*"
+    - "+.lan"
+    - "+.local"
+  default-nameserver:
+    - 223.5.5.5
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
+  fallback:
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - https://doh.dns.sb/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+  - name: "DNS_Hijack"
+    type: dns
+
+proxy-groups:
+  - { name: 🎯 总模式, type: select, proxies: [ 🚀 节点选择,♻️ 自动切换,🔯 故障转移,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 🚀 节点选择, type: select, proxies: [ ♻️ 自动切换,🔯 故障转移,🌎 全球直连 ], <<: *u }
+  - { name: ♻️ 自动切换, <<: *u, tolerance: 2, type: url-test, url: http://www.apple.com/library/test/success.html, interval: 300 }
+  - { name: 🔯 故障转移, <<: *u, tolerance: 2, type: fallback, url: http://www.apple.com/library/test/success.html, interval: 300 }
+  - { name: ♻️ 手动切换, type: select, proxies: [ 🚀 节点选择,🌎 全球直连 ], <<: *u }
+  - { name: 🎬 科学上网, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: Ⓜ️ DNS服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📹 奈飞视频, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📢 谷歌服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: Ⓜ️ 微软服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 🍎 苹果服务, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📸 国际抖音, type: select, proxies: [ 🎯 总模式,♻️ 自动切换,♻️ 手动切换,🌎 全球直连 ] }
+  - { name: 📷 中国抖音, type: select, proxies: [ 🌎 全球直连,🎯 总模式,♻️ 自动切换,♻️ 手动切换 ] }
+  - { name: 🛑 广告拦截, type: select, proxies: [ REJECT,🌎 全球直连 ] }
+  - { name: 🐋 漏网之鱼, type: select, proxies: [ 🎯 总模式,🌎 全球直连 ] }
+  - { name: 🌎 全球直连, type: select, proxies: [ DIRECT ] }
+
+rules:
+  - DOMAIN-SUFFIX,mob.com,🌎 全球直连
+  - AND,((RULE-SET,anti_ad_domain),(NOT,((RULE-SET,anti_ad_white_domain)))),REJECT
+  - DST-PORT,53,DNS_Hijack
+  - GEOIP,lan,🌎 全球直连,no-resolve
+  - DOMAIN-SUFFIX,zkyml.com,🌎 全球直连
+  - PROCESS-NAME,com.zhiliaoapp.musically,📸 国际抖音
+  - PROCESS-NAME,com.ss.android.ugc.aweme,📷 中国抖音
+
+  - AND,((RULE-SET,google_domain),(RULE-SET,google_ip)),📢 谷歌服务
+  - AND,((RULE-SET,telegram_domain),(RULE-SET,telegram_ip)),📢 谷歌服务
+  - AND,((RULE-SET,twitter_domain),(RULE-SET,twitter_ip)),📢 谷歌服务
+  - AND,((RULE-SET,netflix_domain),(RULE-SET,netflix_ip)),📹 奈飞视频
+  - RULE-SET,youtube_domain,📢 谷歌服务
+  - RULE-SET,apple_domain,🍎 苹果服务
+  - RULE-SET,github_domain,🎬 科学上网
+  - AND,((RULE-SET,cn_domain),(RULE-SET,cn_ip)),🌎 全球直连
+  - RULE-SET,geolocation-!cn,🐋 漏网之鱼
+
+  - GEOSITE,category-ads-all,🛑 广告拦截
+  - GEOSITE,CN,🌎 全球直连
+  - GEOIP,private,🌎 全球直连,no-resolve
+  - GEOIP,CN,🌎 全球直连,no-resolve
+  - MATCH,🐋 漏网之鱼
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: yaml}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: yaml}
+rule-providers:
+  private:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml"
+  cn_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml"
+  github_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/github.yaml"
+  twitter_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.yaml"
+  youtube_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.yaml"
+  google_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/google.yaml"
+  telegram_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml"
+  apple_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.yaml"
+  netflix_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.yaml"
+  geolocation-!cn:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml"
+
+  # anti-AD 广告拦截规则
+  # https://github.com/privacy-protection-tools/anti-AD
+  # 如果误杀率高请自行更换
+  anti_ad_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml?"
+  # anti-AD 白名单规则
+  anti_ad_white_domain:
+    <<: *domain
+    url: "https://ghp.ci/https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml?"
+
+  cn_ip:
+    <<: *ip
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml"
+  google_ip:
+    <<: *ip
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml"
+  netflix_ip:
+    <<: *ip
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.yaml"
+  twitter_ip:
+    <<: *ip
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.yaml"
+  telegram_ip:
+    <<: *ip
+    url: "https://ghp.ci/https://raw.githubusercontent.com//MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml"
