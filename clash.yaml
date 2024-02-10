@@ -17,18 +17,22 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] _02", server: 108.181.24.77, port: 43656, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Relay_-🇫🇷FR_03", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] _07", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Relay_-🇺🇸US_08", server: 64.110.25.11, port: 33337, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Relay_-🇹🇼TW_14", server: hinet.wumaojichang.com, port: 8086, client-fingerprint: chrome, type: hysteria2, password: e15a928d-cd74-4a8c-9305-19db97c2f3fd, auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_netflix_TW", server: ty16.twty.dynu.net, port: 8882, client-fingerprint: chrome, type: hysteria2, password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, sni: ty16.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_-🇹🇼TW_04", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_-🇫🇷FR_06", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] _08", server: 108.181.24.77, port: 43656, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_-🇹🇼TW_13", server: hinet.wumaojichang.com, port: 8086, client-fingerprint: chrome, type: hysteria2, password: e15a928d-cd74-4a8c-9305-19db97c2f3fd, auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] Relay_-🇭🇰HK_15", server: hkt.wumaojichang.com, port: 8086, client-fingerprint: chrome, type: hysteria2, password: e15a928d-cd74-4a8c-9305-19db97c2f3fd, auth: e15a928d-cd74-4a8c-9305-19db97c2f3fd, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] Relay_-🇹🇼TW_31", server: www2.dtku48.xyz, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, fast-open: false, protocol: udp, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_796", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, auth: a879c622-37bf-4f3e-a8bf-a7f4a0daf465, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_798", server: www4.dtku49.xyz, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, fast-open: false, protocol: udp, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_801", server: www.dtku50.xyz, port: 11229, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_874", server: 108.181.22.239, port: 39967, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_877", server: 167.160.91.115, port: 41189, client-fingerprint: chrome, type: hysteria, auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF, auth-str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF, up: 80, down: 100, fast-open: false, protocol: udp, sni: www.amazon.cn, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] _90", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] Relay_-🇹🇼TW_92", server: www2.dtku48.xyz, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, fast-open: false, protocol: udp, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] Relay_-🇺🇸US_98", server: 64.110.25.11, port: 33337, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_-🇯🇵JP_103", server: jpntt2.sharecentre.online, port: 4433, client-fingerprint: chrome, type: hysteria2, password: sharecentrepro, auth: sharecentrepro, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_890", server: www4.dtku49.xyz, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_892", server: www.dtku50.xyz, port: 11229, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] disney_netflix_TW", server: 1.162.147.177, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: www2.dtku48.xyz, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] Pool_🇺🇸US_980", server: 108.181.22.239, port: 39967, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] Pool_🇺🇸US_981", server: 167.160.91.115, port: 41189, client-fingerprint: chrome, type: hysteria, auth_str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF, auth-str: bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF, up: 11, down: 55, fast-open: false, protocol: udp, sni: www.amazon.cn, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_982", server: hy2-us-2.speed-mitce.top, port: 34118, client-fingerprint: chrome, type: hysteria2, password: 3FE0F6D0-69E3-4A62-9AFE-CB7677D60B19, auth: 3FE0F6D0-69E3-4A62-9AFE-CB7677D60B19, sni: hy2-us-2.speed-mitce.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -46,35 +50,43 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - "[Hysteria2] _02"
-      - "[Hysteria2] Relay_-🇫🇷FR_03"
-      - "[Hysteria2] _07"
-      - "[Hysteria2] Relay_-🇺🇸US_08"
-      - "[Hysteria2] Relay_-🇹🇼TW_14"
+      - "[Hysteria2] disney_netflix_TW"
+      - "[Hysteria2] Relay_-🇹🇼TW_04"
+      - "[Hysteria2] Relay_-🇫🇷FR_06"
+      - "[Hysteria2] _08"
+      - "[Hysteria2] Relay_-🇹🇼TW_13"
       - "[Hysteria2] Relay_-🇭🇰HK_15"
-      - "[Hysteria] Relay_-🇹🇼TW_31"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_796"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_798"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_801"
-      - "[Hysteria] Pool_🇺🇸US_874"
-      - "[Hysteria] Pool_🇺🇸US_877"
+      - "[Hysteria2] _90"
+      - "[Hysteria] Relay_-🇹🇼TW_92"
+      - "[Hysteria2] Relay_-🇺🇸US_98"
+      - "[Hysteria2] Relay_-🇯🇵JP_103"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_890"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_892"
+      - "[Hysteria] disney_netflix_TW"
+      - "[Hysteria] Pool_🇺🇸US_980"
+      - "[Hysteria] Pool_🇺🇸US_981"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_982"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[Hysteria2] _02"
-      - "[Hysteria2] Relay_-🇫🇷FR_03"
-      - "[Hysteria2] _07"
-      - "[Hysteria2] Relay_-🇺🇸US_08"
-      - "[Hysteria2] Relay_-🇹🇼TW_14"
+      - "[Hysteria2] disney_netflix_TW"
+      - "[Hysteria2] Relay_-🇹🇼TW_04"
+      - "[Hysteria2] Relay_-🇫🇷FR_06"
+      - "[Hysteria2] _08"
+      - "[Hysteria2] Relay_-🇹🇼TW_13"
       - "[Hysteria2] Relay_-🇭🇰HK_15"
-      - "[Hysteria] Relay_-🇹🇼TW_31"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_796"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_798"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_801"
-      - "[Hysteria] Pool_🇺🇸US_874"
-      - "[Hysteria] Pool_🇺🇸US_877"
+      - "[Hysteria2] _90"
+      - "[Hysteria] Relay_-🇹🇼TW_92"
+      - "[Hysteria2] Relay_-🇺🇸US_98"
+      - "[Hysteria2] Relay_-🇯🇵JP_103"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_890"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_892"
+      - "[Hysteria] disney_netflix_TW"
+      - "[Hysteria] Pool_🇺🇸US_980"
+      - "[Hysteria] Pool_🇺🇸US_981"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_982"
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -284,13 +296,14 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - DIRECT
+      - "[Hysteria2] Relay_-🇯🇵JP_103"
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - "[Hysteria2] Relay_-🇺🇸US_08"
-      - "[Hysteria] Pool_🇺🇸US_874"
-      - "[Hysteria] Pool_🇺🇸US_877"
+      - "[Hysteria2] Relay_-🇺🇸US_98"
+      - "[Hysteria] Pool_🇺🇸US_980"
+      - "[Hysteria] Pool_🇺🇸US_981"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_982"
   - name: 🇸🇬 新加坡节点
     type: select
     proxies:
@@ -298,11 +311,13 @@ proxy-groups:
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - "[Hysteria2] Relay_-🇹🇼TW_14"
-      - "[Hysteria] Relay_-🇹🇼TW_31"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_796"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_798"
-      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_801"
+      - "[Hysteria2] disney_netflix_TW"
+      - "[Hysteria2] Relay_-🇹🇼TW_04"
+      - "[Hysteria2] Relay_-🇹🇼TW_13"
+      - "[Hysteria] Relay_-🇹🇼TW_92"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_890"
+      - "[Hysteria] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_892"
+      - "[Hysteria] disney_netflix_TW"
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
