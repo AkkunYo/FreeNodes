@@ -16,7 +16,8 @@ dns:
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-proxies: ~
+proxies:
+  - {name: "[Hysteria2] Relay_-🇫🇷FR_01", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -34,13 +35,13 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - DIRECT
+      - "[Hysteria2] Relay_-🇫🇷FR_01"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DIRECT
+      - "[Hysteria2] Relay_-🇫🇷FR_01"
   - name: 🎯 国内网络
     type: select
     proxies:
