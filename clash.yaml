@@ -17,21 +17,24 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] AU_32", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] netflix_US", server: 64.110.25.11, port: 33337, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] AU_46", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] AU_32"
+      - "[Hysteria2] netflix_US"
+      - "[Hysteria2] AU_46"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] AU_32"
+      - "[Hysteria2] netflix_US"
+      - "[Hysteria2] AU_46"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -49,7 +52,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] AU_32"
+      - "[Hysteria2] netflix_US"
+      - "[Hysteria2] AU_46"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
