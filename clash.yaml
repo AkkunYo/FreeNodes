@@ -17,21 +17,21 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria] netflix_TW", server: www2.dtku48.xyz, port: 22334, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, fast-open: false, protocol: udp, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] US_450", server: 142.171.174.206, port: 15090, client-fingerprint: chrome, type: hysteria2, password: b46cb204-5849-4b86-852d-8154fb8eb580, auth: b46cb204-5849-4b86-852d-8154fb8eb580, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria] netflix_TW"
+      - "[Hysteria2] US_450"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria] netflix_TW"
+      - "[Hysteria2] US_450"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -49,7 +49,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria] netflix_TW"
+      - "[Hysteria2] US_450"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
