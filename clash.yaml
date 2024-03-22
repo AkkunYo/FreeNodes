@@ -17,30 +17,39 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] disney_TW", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] disney_TW 2", server: ty16.twty.dynu.net, port: 8882, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty16.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] disney_TW 3", server: b37.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b37.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] disney_TW 4", server: b26.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b26.ntbq.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_-🇫🇷FR_03", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Pool__05", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, up: 11 Mbps, down: 55 Mbps, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] AU_129", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_832", server: b26.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b26.ntbq.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_833", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_834", server: ty16.twty.dynu.net, port: 8882, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty16.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_835", server: b37.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b37.ntbq.dynu.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] disney_TW"
-      - "[Hysteria2] disney_TW 2"
-      - "[Hysteria2] disney_TW 3"
-      - "[Hysteria2] disney_TW 4"
+      - "[Hysteria2] Relay_-🇫🇷FR_03"
+      - "[Hysteria2] Pool__05"
+      - "[Hysteria2] AU_129"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_832"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_833"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_834"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_835"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] disney_TW"
-      - "[Hysteria2] disney_TW 2"
-      - "[Hysteria2] disney_TW 3"
-      - "[Hysteria2] disney_TW 4"
+      - "[Hysteria2] Relay_-🇫🇷FR_03"
+      - "[Hysteria2] Pool__05"
+      - "[Hysteria2] AU_129"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_832"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_833"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_834"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_835"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -58,10 +67,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] disney_TW"
-      - "[Hysteria2] disney_TW 2"
-      - "[Hysteria2] disney_TW 3"
-      - "[Hysteria2] disney_TW 4"
+      - "[Hysteria2] Relay_-🇫🇷FR_03"
+      - "[Hysteria2] Pool__05"
+      - "[Hysteria2] AU_129"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_832"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_833"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_834"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_835"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
