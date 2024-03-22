@@ -17,33 +17,30 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_589", server: b26.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b26.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_590", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_591", server: b37.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b37.ntbq.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_592", server: ty16.twty.dynu.net, port: 8882, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty16.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_655", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] disney_TW", server: ty17.twty.dynu.net, port: 8991, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty17.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_TW 2", server: ty16.twty.dynu.net, port: 8882, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: ty16.twty.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_TW 3", server: b37.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b37.ntbq.dynu.net, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_TW 4", server: b26.ntbq.dynu.net, port: 8886, client-fingerprint: chrome, type: hysteria2, password: ff0a98ef-e829-4a62-b625-998593df5249, auth: ff0a98ef-e829-4a62-b625-998593df5249, sni: b26.ntbq.dynu.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_589"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_590"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_591"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_592"
-      - "[Hysteria] Pool_🇺🇸US_655"
+      - "[Hysteria2] disney_TW"
+      - "[Hysteria2] disney_TW 2"
+      - "[Hysteria2] disney_TW 3"
+      - "[Hysteria2] disney_TW 4"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_589"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_590"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_591"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_592"
-      - "[Hysteria] Pool_🇺🇸US_655"
+      - "[Hysteria2] disney_TW"
+      - "[Hysteria2] disney_TW 2"
+      - "[Hysteria2] disney_TW 3"
+      - "[Hysteria2] disney_TW 4"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -61,11 +58,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_589"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_590"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_591"
-      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇹🇼TW_592"
-      - "[Hysteria] Pool_🇺🇸US_655"
+      - "[Hysteria2] disney_TW"
+      - "[Hysteria2] disney_TW 2"
+      - "[Hysteria2] disney_TW 3"
+      - "[Hysteria2] disney_TW 4"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
