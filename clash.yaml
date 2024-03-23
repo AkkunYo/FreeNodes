@@ -17,21 +17,21 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] AU_803", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_933", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] AU_803"
+      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_933"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] AU_803"
+      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_933"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -49,7 +49,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] AU_803"
+      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_933"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
