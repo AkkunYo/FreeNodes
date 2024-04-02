@@ -17,36 +17,27 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] Relay_-🇫🇷FR_06", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] AU_946", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Pool_🇫🇷FR_1084", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] FR_1085", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_1734", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] US_1735", server: 108.181.24.77, port: 43656, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Pool__03", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, up: 11 Mbps, down: 55 Mbps, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] AU_1026", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] FR_1131", server: 51.158.54.46, port: 55396, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: youku.com, skip-cert-verify: true, alpn: [h3], udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] Relay_-🇫🇷FR_06"
-      - "[Hysteria2] AU_946"
-      - "[Hysteria2] Pool_🇫🇷FR_1084"
-      - "[Hysteria2] FR_1085"
-      - "[Hysteria] Pool_🇺🇸US_1734"
-      - "[Hysteria2] US_1735"
+      - "[Hysteria2] Pool__03"
+      - "[Hysteria2] AU_1026"
+      - "[Hysteria] FR_1131"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] Relay_-🇫🇷FR_06"
-      - "[Hysteria2] AU_946"
-      - "[Hysteria2] Pool_🇫🇷FR_1084"
-      - "[Hysteria2] FR_1085"
-      - "[Hysteria] Pool_🇺🇸US_1734"
-      - "[Hysteria2] US_1735"
+      - "[Hysteria2] Pool__03"
+      - "[Hysteria2] AU_1026"
+      - "[Hysteria] FR_1131"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -64,12 +55,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] Relay_-🇫🇷FR_06"
-      - "[Hysteria2] AU_946"
-      - "[Hysteria2] Pool_🇫🇷FR_1084"
-      - "[Hysteria2] FR_1085"
-      - "[Hysteria] Pool_🇺🇸US_1734"
-      - "[Hysteria2] US_1735"
+      - "[Hysteria2] Pool__03"
+      - "[Hysteria2] AU_1026"
+      - "[Hysteria] FR_1131"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
