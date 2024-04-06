@@ -19,8 +19,7 @@ dns:
 proxies:
   - {name: "[Hysteria2] Relay_-🇫🇷FR_01", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
   - {name: "[Hysteria2] Pool__02", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, up: 11 Mbps, down: 55 Mbps, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] AU_774", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] US_1408", server: 108.181.24.77, port: 43656, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] AU_814", server: 170.64.183.54, port: 33939, client-fingerprint: chrome, type: hysteria2, password: miaoge110., auth: miaoge110., sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,8 +28,7 @@ proxy-groups:
       - DIRECT
       - "[Hysteria2] Relay_-🇫🇷FR_01"
       - "[Hysteria2] Pool__02"
-      - "[Hysteria2] AU_774"
-      - "[Hysteria2] US_1408"
+      - "[Hysteria2] AU_814"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -39,8 +37,7 @@ proxy-groups:
     proxies:
       - "[Hysteria2] Relay_-🇫🇷FR_01"
       - "[Hysteria2] Pool__02"
-      - "[Hysteria2] AU_774"
-      - "[Hysteria2] US_1408"
+      - "[Hysteria2] AU_814"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -60,8 +57,7 @@ proxy-groups:
       - ♻️ 自动选择
       - "[Hysteria2] Relay_-🇫🇷FR_01"
       - "[Hysteria2] Pool__02"
-      - "[Hysteria2] AU_774"
-      - "[Hysteria2] US_1408"
+      - "[Hysteria2] AU_814"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
