@@ -17,19 +17,13 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] ", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, up: 11 Mbps, down: 55 Mbps, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2]  2", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2]  3", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] ", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] ", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] "
-      - "[Hysteria2]  2"
-      - "[Hysteria2]  3"
       - "[Hysteria] "
   - name: ♻️ 自动选择
     type: url-test
@@ -37,9 +31,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] "
-      - "[Hysteria2]  2"
-      - "[Hysteria2]  3"
       - "[Hysteria] "
   - name: 🎯 全球直连
     type: select
@@ -58,9 +49,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] "
-      - "[Hysteria2]  2"
-      - "[Hysteria2]  3"
       - "[Hysteria] "
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
