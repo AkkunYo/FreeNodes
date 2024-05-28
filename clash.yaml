@@ -17,48 +17,51 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_478", server: 62.210.243.131, port: 18702, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] FR_480", server: 51.159.213.39, port: 18702, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] FR_481", server: 51.158.54.46, port: 55396, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 55, down: 110, fast-open: false, protocol: udp, sni: youku.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_482", server: 62.210.103.0, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Pool_🇫🇷FR_483", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_1104", server: 108.181.5.133, port: 26022, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] US_1106", server: 64.31.55.72, port: 55661, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 5, down: 20, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] US_1107", server: 109.104.152.194, port: 58510, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_1108", server: 173.234.25.50, port: 1992, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] US_1109", server: 109.104.152.89, port: 22441, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_494", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_495", server: 62.210.243.131, port: 18702, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 55, down: 110, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] Pool_🇫🇷FR_497", server: 51.159.77.153, port: 33390, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_1055", server: 74.63.233.74, port: 33445, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] Pool_🇺🇸US_1056", server: 173.234.25.50, port: 1992, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria2] US_1057", server: 109.104.152.89, port: 22441, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: google.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_1058", server: 154.16.27.143, port: 5433, client-fingerprint: chrome, type: hysteria2, password: 1bd496a4, auth: 1bd496a4, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria] US_1059", server: 109.104.152.194, port: 58510, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] Pool_🇺🇸US_1060", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 80, down: 100, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] Pool_🇺🇸US_1062", server: 108.181.5.133, port: 26022, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 55, down: 110, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: "[Hysteria] US_1063", server: 64.31.55.72, port: 55661, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 5, down: 20, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_478"
-      - "[Hysteria] FR_480"
-      - "[Hysteria] FR_481"
-      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_482"
-      - "[Hysteria2] Pool_🇫🇷FR_483"
-      - "[Hysteria] Pool_🇺🇸US_1104"
-      - "[Hysteria] US_1106"
-      - "[Hysteria] US_1107"
-      - "[Hysteria] Pool_🇺🇸US_1108"
-      - "[Hysteria2] US_1109"
+      - "[Hysteria2] FR_494"
+      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_495"
+      - "[Hysteria2] Pool_🇫🇷FR_497"
+      - "[Hysteria2] US_1055"
+      - "[Hysteria] Pool_🇺🇸US_1056"
+      - "[Hysteria2] US_1057"
+      - "[Hysteria2] US_1058"
+      - "[Hysteria] US_1059"
+      - "[Hysteria] Pool_🇺🇸US_1060"
+      - "[Hysteria] Pool_🇺🇸US_1062"
+      - "[Hysteria] US_1063"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_478"
-      - "[Hysteria] FR_480"
-      - "[Hysteria] FR_481"
-      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_482"
-      - "[Hysteria2] Pool_🇫🇷FR_483"
-      - "[Hysteria] Pool_🇺🇸US_1104"
-      - "[Hysteria] US_1106"
-      - "[Hysteria] US_1107"
-      - "[Hysteria] Pool_🇺🇸US_1108"
-      - "[Hysteria2] US_1109"
+      - "[Hysteria2] FR_494"
+      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_495"
+      - "[Hysteria2] Pool_🇫🇷FR_497"
+      - "[Hysteria2] US_1055"
+      - "[Hysteria] Pool_🇺🇸US_1056"
+      - "[Hysteria2] US_1057"
+      - "[Hysteria2] US_1058"
+      - "[Hysteria] US_1059"
+      - "[Hysteria] Pool_🇺🇸US_1060"
+      - "[Hysteria] Pool_🇺🇸US_1062"
+      - "[Hysteria] US_1063"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -76,16 +79,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_478"
-      - "[Hysteria] FR_480"
-      - "[Hysteria] FR_481"
-      - "[Hysteria2] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_482"
-      - "[Hysteria2] Pool_🇫🇷FR_483"
-      - "[Hysteria] Pool_🇺🇸US_1104"
-      - "[Hysteria] US_1106"
-      - "[Hysteria] US_1107"
-      - "[Hysteria] Pool_🇺🇸US_1108"
-      - "[Hysteria2] US_1109"
+      - "[Hysteria2] FR_494"
+      - "[Hysteria] 🇫🇷 Relay_🇫🇷FR-🇫🇷FR_495"
+      - "[Hysteria2] Pool_🇫🇷FR_497"
+      - "[Hysteria2] US_1055"
+      - "[Hysteria] Pool_🇺🇸US_1056"
+      - "[Hysteria2] US_1057"
+      - "[Hysteria2] US_1058"
+      - "[Hysteria] US_1059"
+      - "[Hysteria] Pool_🇺🇸US_1060"
+      - "[Hysteria] Pool_🇺🇸US_1062"
+      - "[Hysteria] US_1063"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
