@@ -11,7 +11,7 @@ clashNodeSize=$(grep -c '{name:' ./clash1.yaml)
 echo "clashNodeSize:$clashNodeSize"
 if [ $clashNodeSize -gt 0 ]; then
     echo "上一条命令执行失败（返回值大于0）"
-    rm -rf ./lash.yaml
+    rm -rf ./clash.yaml
     mv ./clash1.yaml ./clash.yaml
 else
     rm -rf ./clash1.yaml

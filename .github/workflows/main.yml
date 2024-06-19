@@ -23,7 +23,7 @@ jobs:
       - name: Commit Changes
         run: |
           git config --global user.email 945395054@qq.com
-          git config --global user.name zkyml
+          git config --global user.name AkkunYo
           git add .
           if git diff-index --quiet HEAD; then
              echo "no changes need commit"
