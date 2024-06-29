@@ -16,7 +16,253 @@ dns:
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-proxies: ~
+proxies:
+  - {name: "[Vless] Relay_-🇰🇷KR_01", server: 3.35.124.166, port: 8080, client-fingerprint: chrome, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: true, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, udp: true}
+  - {name: "[SS] _02", server: 23.157.40.87, port: 8091, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, tfo: false, udp: true}
+  - {name: "[SS] _03", server: 51.68.206.229, port: 8080, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, tfo: false, udp: true}
+  - {name: "[SS] _04", server: 23.157.40.102, port: 5001, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[SS] _05", server: 103.172.116.94, port: 9053, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, tfo: false, udp: true}
+  - {name: "[SS] _06", server: 38.121.43.97, port: 8091, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, tfo: false, udp: true}
+  - {name: "[SS] _07", server: 103.172.116.103, port: 9093, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, tfo: false, udp: true}
+  - {name: "[SS] _08", server: 23.157.40.120, port: 8119, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, tfo: false, udp: true}
+  - {name: "[SS] _09", server: 5.188.181.201, port: 9027, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, tfo: false, udp: true}
+  - {name: "[SS] _13", server: 38.86.135.225, port: 5601, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[SS] _17", server: 38.114.114.208, port: 7306, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, tfo: false, udp: true}
+  - {name: "[SS] _18", server: 194.14.217.89, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] _19", server: 75.102.51.26, port: 16899, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: Yc2CtrIz8L, tfo: false, udp: true}
+  - {name: "[SS] _20", server: 23.162.200.181, port: 7307, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, tfo: false, udp: true}
+  - {name: "[SS] _21", server: 38.114.114.143, port: 2376, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, tfo: false, udp: true}
+  - {name: "[SS] _22", server: 23.157.40.89, port: 9101, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, tfo: false, udp: true}
+  - {name: "[SS] _23", server: 213.183.63.69, port: 9020, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, tfo: false, udp: true}
+  - {name: "[SS] _24", server: 80.92.204.106, port: 9015, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, tfo: false, udp: true}
+  - {name: "[SS] _27", server: 45.158.171.66, port: 8080, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, tfo: false, udp: true}
+  - {name: "[SS] _28", server: sha.majidcttls.ggff.net, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-cfb, password: shadowsocks, tfo: false, udp: true}
+  - {name: "[SS] _29", server: 38.110.1.43, port: 9101, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, tfo: false, udp: true}
+  - {name: "[SS] _31", server: 212.102.53.195, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false, udp: true}
+  - {name: "[VMess] Relay_-🇹🇼TW_33", server: 104.19.47.4, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: "[VMess] _34", server: 217.160.45.31, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] _35", server: 103.159.206.35, port: 31945, client-fingerprint: chrome, type: vmess, uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] _36", server: 183.181.36.194, port: 41597, client-fingerprint: chrome, type: vmess, uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] _37", server: 142.0.134.241, port: 45017, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] _38", server: 162.19.25.207, port: 44513, client-fingerprint: chrome, type: vmess, uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] Pool__39", server: 151.115.83.239, port: 43118, client-fingerprint: chrome, type: trojan, password: ypDt8RkT7J, sni: egajz.phooeyunfold.com, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] Relay_-🇹🇼TW_40", server: 211.72.156.17, port: 23555, client-fingerprint: chrome, type: trojan, password: moist, sni: trojan.freenods.sbs, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: trojan.freenods.sbs}}, udp: true}
+  - {name: "[Trojan] _41", server: 45.76.241.66, port: 443, client-fingerprint: chrome, type: trojan, password: wkmY1R4EcP, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] _42", server: 23.142.200.175, port: 443, client-fingerprint: chrome, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true, udp: true}
+  - {name: "[SS] AF_43", server: 121.127.46.147, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[Trojan] AF_44", server: 121.127.46.131, port: 43118, client-fingerprint: chrome, type: trojan, password: ypDt8RkT7J, sni: tpmrt.phooeyunfold.com, skip-cert-verify: true, udp: true}
+  - {name: "[SS] AL_45", server: 31.171.153.182, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] Relay_🇦🇴 AO-🇺🇸US_46", server: us.sptnk.space, port: 57456, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3fbeb668f48414f6, tfo: false, udp: true}
+  - {name: "[SS] AO_47", server: 104.167.197.23, port: 57456, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3fbeb668f48414f6, tfo: false, udp: true}
+  - {name: "[SS] AR_48", server: 190.103.176.29, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] AU_49", server: 143.244.62.106, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[VMess] AU_50", server: 140.83.63.38, port: 24445, client-fingerprint: chrome, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] AU_51", server: 194.195.125.63, port: 18100, client-fingerprint: chrome, type: vmess, uuid: 0bba5ade6cd611eebd56f23c935079d0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] AZ_52", server: 88.151.192.26, port: 1080, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3pURuTUf-lFgg5qWg8euFA, tfo: false, udp: true}
+  - {name: "[SS] BA_53", server: 185.164.35.9, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] Relay_🇧🇩 BD-🇳🇱NL_54", server: 103.106.2.90, port: 8881, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: oxp4Xr64OKpXV127Zwtzl14P8L8PovqbFGPHbnbhRf7CxCSW1E, tfo: false, udp: true}
+  - {name: "[VMess] Relay_🇧🇬BG-🇫🇷FR_56", server: 147.78.140.26, port: 443, client-fingerprint: chrome, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link}, udp: true}
+  - {name: "[VMess] Relay_🇧🇬BG-🇩🇪DE_57", server: 147.78.140.68, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 6c47-butterfly-6c47.yexoji3749.workers.dev, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws}, udp: true}
+  - {name: "[SS] CA_58", server: 38.111.114.133, port: 5000, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[SS] CA_61", server: 198.245.49.22, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[Trojan] CA_62", server: 3.96.136.26, port: 16616, client-fingerprint: chrome, type: trojan, password: qo)XNzstODA0, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] CA_63", server: 3.96.217.90, port: 16634, client-fingerprint: chrome, type: trojan, password: 1LGkbtUNMdPJ, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] CA_64", server: 3.96.165.14, port: 16637, client-fingerprint: chrome, type: trojan, password: 6nM7hKJrVoT6, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] CA_65", server: 35.183.69.147, port: 16610, client-fingerprint: chrome, type: trojan, password: u1Z8wnU4CKZg, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] CA_66", server: 3.96.188.224, port: 16615, client-fingerprint: chrome, type: trojan, password: Es9RvqDRLiBN, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] CN_67", server: 112.132.215.12, port: 50002, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] CN_68", server: 47.92.152.169, port: 50002, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] Relay_🇨🇾CY-🇩🇪DE_69", server: 195.85.59.22, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 8shhebsj78wjisnbhsjvess-pond-6cc6.cerog91216.workers.dev, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws}, udp: true}
+  - {name: "[VMess] Relay_🇨🇾CY-🇫🇷FR_70", server: 195.85.59.154, port: 443, client-fingerprint: chrome, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 52aa-super-river-52aa.pobin49599.workers.dev, network: ws, ws-opts: {path: /glweidf.sbs/linkws}, udp: true}
+  - {name: "[SS] 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_72", server: outline.de.outlinekeys.net, port: 20888, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: gaMLWssWlHf9LCbQ3T5Ymk, tfo: false, udp: true}
+  - {name: "[VMess] DE_73", server: 80.92.204.207, port: 8880, client-fingerprint: chrome, type: vmess, uuid: cf3bb05c-736f-4ada-98d5-5090587b27e9, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: "[VMess] 🇩🇪 Relay_🇩🇪DE-🇺🇸US_75", server: 185.135.9.208, port: 443, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: worker-divine-hat-02d6.savofir317.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[Trojan] DE_76", server: 3.73.189.136, port: 22222, client-fingerprint: chrome, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] DE_77", server: 18.199.226.174, port: 16621, client-fingerprint: chrome, type: trojan, password: t1vIDAJAlWcw, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] DE_78", server: 3.70.241.96, port: 16644, client-fingerprint: chrome, type: trojan, password: D2D77Ejhob)A, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_79", server: 51.158.54.46, port: 44550, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: 51.158.54.46, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_82", server: 51.159.213.39, port: 22483, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[SS] FR_87", server: 51.159.111.208, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[VMess] FR_88", server: hms26.xpengmotors.sbs, port: 443, client-fingerprint: chrome, type: vmess, uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hms26.xpengmotors.sbs, network: ws, ws-opts: {path: /linkws, headers: {Host: hms26.xpengmotors.sbs}}, udp: true}
+  - {name: "[Trojan] FR_89", server: 13.38.71.35, port: 16608, client-fingerprint: chrome, type: trojan, password: Q6u4ctsy8nSy, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] FR_90", server: 13.39.158.97, port: 16612, client-fingerprint: chrome, type: trojan, password: vPshAo08Wpn1, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[SS] GB_91", server: 77.72.5.150, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_92", server: shadowsocks-gb.ctsubvpn.ggff.net, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[VMess] GB_93", server: 68.168.31.242, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 68.168.31.242, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] GB_94", server: 149.7.16.174, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 149.7.16.174, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] GB_95", server: 68.168.31.196, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 68.168.31.196, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[Trojan] GB_96", server: 18.170.51.127, port: 16632, client-fingerprint: chrome, type: trojan, password: )EqPNQtUV0O(, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] GB_97", server: 13.40.95.18, port: 16605, client-fingerprint: chrome, type: trojan, password: Uvj)y)rmVRL), sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] GB_98", server: 52.56.43.85, port: 16630, client-fingerprint: chrome, type: trojan, password: RESTy(R3pg5p, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_99", server: j0083.ruixiangseo.xyz, port: 43005, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0083.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_100", server: j0079.ruixiangseo.xyz, port: 43003, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0079.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_101", server: j0080.ruixiangseo.xyz, port: 43004, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0080.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] HK_102", server: 154.44.27.93, port: 43005, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0082.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_103", server: j0077.ruixiangseo.xyz, port: 43001, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0077.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] HK_104", server: 154.44.27.9, port: 43001, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0077.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] HK_105", server: 154.44.27.210, port: 43005, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0083.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] HK_106", server: 154.44.27.122, port: 43002, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0078.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[SS] IE_107", server: 52.169.37.198, port: 5351, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: CXmScWyHfrz8vfwAvd7dJ7, tfo: false, udp: true}
+  - {name: "[VMess] IE_108", server: 185.231.207.232, port: 2095, client-fingerprint: chrome, type: vmess, uuid: 51dc837c-1892-4609-9ff7-928f22d69ff5, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ie1-vmess.vpnhack.xyz, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: "[VMess] IN_109", server: 139.59.24.215, port: 3389, client-fingerprint: chrome, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: "[SS] 🇯🇵 Relay_🇯🇵JP-🇦🇮AI_110", server: iepl2.forlive.live, port: 50105, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 8d4aa9b5-6305-30ce-b8ee-b240c632ae52, tfo: false, udp: true}
+  - {name: "[VMess] JP_112", server: 139.162.113.144, port: 18100, client-fingerprint: chrome, type: vmess, uuid: a1825e6847c911eeba2df23c93ff01cc, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] JP_113", server: 54.95.72.213, port: 16606, client-fingerprint: chrome, type: trojan, password: T(TUsU3WcKBK, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] JP_114", server: 52.195.219.92, port: 16634, client-fingerprint: chrome, type: trojan, password: efx8OLjbmh3X, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] JP_115", server: 52.194.190.1, port: 16637, client-fingerprint: chrome, type: trojan, password: UKvKSTVnk4Vv, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] JP_116", server: 52.194.225.184, port: 16634, client-fingerprint: chrome, type: trojan, password: BmBt9FHyLc8b, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] KR_117", server: 152.70.39.9, port: 26022, client-fingerprint: chrome, type: vmess, uuid: e0254dda-dc8c-46b0-8df8-07c453aaafd7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] KR_118", server: 52.79.247.2, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false, udp: true}
+  - {name: "[Trojan] KR_119", server: 3.39.235.92, port: 16627, client-fingerprint: chrome, type: trojan, password: LIcZMrywcsJJ, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] KR_120", server: 52.78.160.106, port: 16636, client-fingerprint: chrome, type: trojan, password: CfsvpWTDID4h, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] KR_121", server: 13.125.131.165, port: 16628, client-fingerprint: chrome, type: trojan, password: jflylhBc6YYF, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_122", server: prispy.koreanbbq.link, port: 443, client-fingerprint: chrome, type: trojan, password: IFZ8Ya5xpEwNTxF6BCjCql7nXgCDFSRlAlX963CpeSSuZ34leSzDRBpgKea237DO88nzy, sni: prispy.koreanbbq.link, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_123", server: 116.47.10.236, port: 27335, client-fingerprint: chrome, type: trojan, password: moist, sni: trojan.freenods.sbs, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: trojan.freenods.sbs}}, udp: true}
+  - {name: "[SS] LT_124", server: 192.36.61.59, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_125", server: 188.114.96.2, port: 443, client-fingerprint: chrome, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: obdii.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_126", server: 188.114.96.1, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: afrhms16v.bestxray.buzz, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_127", server: 188.114.97.7, port: 443, client-fingerprint: chrome, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: ivideos.sbs, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇵🇱PL_128", server: 188.114.96.3, port: 443, client-fingerprint: chrome, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top, network: ws, ws-opts: {path: /azumase.ren}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_129", server: 188.114.97.3, port: 443, client-fingerprint: chrome, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: linde06.indiavideo.sbs, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_130", server: 188.114.96.6, port: 443, client-fingerprint: chrome, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: jahfkjha.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_131", server: 156.249.18.210, port: 41003, client-fingerprint: chrome, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153326313008}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_132", server: 188.114.97.2, port: 443, client-fingerprint: chrome, type: vmess, uuid: 4804f14b-c1f8-452d-a6ec-eff1490aeac9, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hdfy6c5.cpionline.co, network: ws, ws-opts: {path: /lRkGCkYS9X5GDNJYMWXN7kCm3lL}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_133", server: hdfy8d1.cpi2hidd.eu.org, port: 80, client-fingerprint: chrome, type: vmess, uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: hdfy8d1.cpi2hidd.eu.org, network: ws, ws-opts: {path: /Av8czorIlYicU6D349brWUw6a, headers: {Host: hdfy8d1.cpi2hidd.eu.org}}, udp: true}
+  - {name: "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_134", server: 188.114.99.205, port: 443, client-fingerprint: chrome, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: linde06.indiavideo.sbs, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[SS] NO_135", server: 165.231.120.102, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] PT_136", server: 185.113.140.22, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] RU_137", server: 77.91.75.144, port: 57456, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3fbeb668f48414f6, tfo: false, udp: true}
+  - {name: "[SS] RU_138", server: 141.98.234.8, port: 1080, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 3pURuTUf-lFgg5qWg8euFA, tfo: false, udp: true}
+  - {name: "[SS] RU_139", server: 212.113.106.76, port: 61992, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: q4y68UF0APm1qlyz4ozIMo, tfo: false, udp: true}
+  - {name: "[VMess] Relay_🇸🇪SE-🇫🇷FR_140", server: Back.MsV2ray.online, port: 443, client-fingerprint: chrome, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: jahfkjha.cfd, network: ws, ws-opts: {path: /linkws, headers: {Host: Back.MsV2ray.online}}, udp: true}
+  - {name: "[VMess] Relay_🇸🇪SE-🇫🇷FR_141", server: 185.146.173.59, port: 443, client-fingerprint: chrome, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: obdii.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[Trojan] SE_142", server: 13.49.131.107, port: 22222, client-fingerprint: chrome, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] SE_143", server: 13.49.203.6, port: 22222, client-fingerprint: chrome, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: "[SS] SG_144", server: 103.172.116.79, port: 9014, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, tfo: false, udp: true}
+  - {name: "[VMess] SG_157", server: 159.223.68.144, port: 13337, client-fingerprint: chrome, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] SG_158", server: 31.192.234.7, port: 12954, client-fingerprint: chrome, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] SG_159", server: 213.35.113.150, port: 80, client-fingerprint: chrome, type: vmess, uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[Trojan] SG_160", server: 54.169.183.35, port: 16636, client-fingerprint: chrome, type: trojan, password: m9YjO842emBP, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] SG_161", server: 52.221.238.141, port: 16618, client-fingerprint: chrome, type: trojan, password: bsIerCmv5C6l, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] SG_162", server: 3.0.184.158, port: 16630, client-fingerprint: chrome, type: trojan, password: 9Nvhrpnp2vO9, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] SG_163", server: 13.251.157.182, port: 16605, client-fingerprint: chrome, type: trojan, password: jWhU2WvViV07, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] SG_164", server: 18.136.202.153, port: 16639, client-fingerprint: chrome, type: trojan, password: u6(p3KiGXxgz, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[SS] TH_165", server: 119.59.127.144, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] TW_166", server: 223.165.4.173, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false, udp: true}
+  - {name: "[SS] US_167", server: 38.121.43.71, port: 8881, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, tfo: false, udp: true}
+  - {name: "[SS] US_168", server: 38.75.136.33, port: 6379, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, tfo: false, udp: true}
+  - {name: "[Hysteria2] US_169", server: 137.175.79.36, port: 8620, client-fingerprint: chrome, type: hysteria2, password: XvXbk2s6zvHzavka, auth: XvXbk2s6zvHzavka, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, udp: true}
+  - {name: "[SS] US_170", server: 216.39.248.133, port: 7001, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, tfo: false, udp: true}
+  - {name: "[SS] US_171", server: 38.114.114.6, port: 8882, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, tfo: false, udp: true}
+  - {name: "[SS] US_173", server: 38.114.114.183, port: 5500, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, tfo: false, udp: true}
+  - {name: "[SS] US_175", server: 23.157.40.101, port: 8000, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, tfo: false, udp: true}
+  - {name: "[SS] US_177", server: 23.157.40.26, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, tfo: false, udp: true}
+  - {name: "[SS] US_178", server: 142.202.48.43, port: 3389, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[SS] US_179", server: 38.75.137.139, port: 5004, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, tfo: false, udp: true}
+  - {name: "[SS] US_180", server: 23.157.40.19, port: 8000, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, tfo: false, udp: true}
+  - {name: "[SS] US_186", server: 38.75.137.66, port: 6379, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, tfo: false, udp: true}
+  - {name: "[SS] US_187", server: 15.204.87.215, port: 5001, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[SS] US_189", server: 15.204.87.222, port: 5601, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false, udp: true}
+  - {name: "[VMess] US_192", server: 107.167.20.178, port: 30000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.15314695.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_193", server: 172.67.175.56, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: afrhms16v.bestxray.buzz, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] US_194", server: 129.146.46.181, port: 52408, client-fingerprint: chrome, type: vmess, uuid: a797ff7b-8161-40a6-d577-1b2c213b3885, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_195", server: 172.67.183.220, port: 443, client-fingerprint: chrome, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: jahfkjha.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] US_196", server: 38.75.137.27, port: 22324, client-fingerprint: chrome, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_197", server: hk-4-8gxxxnvk.2819v2rhzb56.download, port: 80, client-fingerprint: chrome, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: hk-4-8gxxxnvk.2819v2rhzb56.download, network: ws, ws-opts: {path: /, headers: {Host: hk-4-8gxxxnvk.2819v2rhzb56.download}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇯🇵JP_198", server: jp-2-t2bh2lhv.2819v2rhzb56.download, port: 80, client-fingerprint: chrome, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: jp-2-t2bh2lhv.2819v2rhzb56.download, network: ws, ws-opts: {path: /, headers: {Host: jp-2-t2bh2lhv.2819v2rhzb56.download}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_199", server: 173.245.58.37, port: 443, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 7wih-darkness-f0af.jivegoh116.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[VMess] US_200", server: 38.99.82.253, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_201", server: 172.67.185.79, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] US_203", server: 69.50.93.90, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: 69.50.93.90, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_204", server: 172.67.181.241, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: afrhms16v.bestxray.buzz, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_205", server: 172.67.198.187, port: 443, client-fingerprint: chrome, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: xmivideo.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] US_206", server: 144.126.145.43, port: 80, client-fingerprint: chrome, type: vmess, uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us.eaxeg.be, network: ws, ws-opts: {path: /XC3c53DiSQ9N70H4Y2aW}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_207", server: 172.64.169.160, port: 8080, client-fingerprint: chrome, type: vmess, uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip001.freegradely.xyz, network: ws, ws-opts: {path: /9aqOiXD2/}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_208", server: 172.64.171.223, port: 443, client-fingerprint: chrome, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: obdii.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_209", server: 172.67.185.161, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇵🇱PL_210", server: pl-a.yuji2022.eu.org, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: pl-a.yuji2022.eu.org, network: ws, ws-opts: {path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL, headers: {Host: pl-a.yuji2022.eu.org}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_211", server: 172.67.185.62, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_212", server: 38.11.20.77, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/350829271126}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_213", server: 38.33.44.34, port: 31001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/302925272203}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_214", server: 142.0.139.105, port: 37000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/030627303301}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_215", server: 108.186.57.246, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/073129272117}, udp: true}
+  - {name: "[VMess] US_216", server: 38.99.82.96, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇳🇱NL_217", server: 172.67.151.228, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: nl-a.yuji2022.eu.org, network: ws, ws-opts: {path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_218", server: 38.173.198.238, port: 36000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1711538744571}, udp: true}
+  - {name: "[VMess] US_219", server: 66.135.3.168, port: 44990, client-fingerprint: chrome, type: vmess, uuid: 88623615-0713-497a-9233-755a33cc7080, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_220", server: 38.33.46.71, port: 37000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1711538744571}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_221", server: 147.185.161.125, port: 443, client-fingerprint: chrome, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: ep-sunset-9b11.kekic13319.workers.dev, network: ws, ws-opts: {path: /ivideos.sbs/linkws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_222", server: 172.67.74.112, port: 2086, client-fingerprint: chrome, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip11.freegradely.xyz, network: ws, ws-opts: {path: github.com/Alvin9999}, udp: true}
+  - {name: "[VMess] Pool_🇺🇸US_223", server: 107.167.20.181, port: 30000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.15314695.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] US_224", server: 38.91.107.36, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: maggiy.shop, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_225", server: 38.11.20.75, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/311727141928}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_226", server: 38.33.57.16, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.40023947.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] US_227", server: us.eaxeg.be, port: 80, client-fingerprint: chrome, type: vmess, uuid: ab602e02-624b-44f0-a51b-25ed53f70048, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us.eaxeg.be, network: ws, ws-opts: {path: /XC3c53DiSQ9N70H4Y2aW, headers: {Host: us.eaxeg.be}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_228", server: 172.67.170.75, port: 80, client-fingerprint: chrome, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us4e-20240111.v2freevpn.com, network: ws, ws-opts: {path: /v149-dskds65}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_229", server: slime-rhinestone-spy.glitch.me, port: 80, client-fingerprint: chrome, type: vmess, uuid: 83a5c82d-a047-418e-9ad9-6ce8c5aaba59, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: slime-rhinestone-spy.glitch.me, network: ws, ws-opts: {path: /83a5c82d-a047-418e-9ad9-6ce8c5aaba59-vmess, headers: {Host: slime-rhinestone-spy.glitch.me}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_230", server: 172.67.172.246, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_231", server: 38.11.20.78, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.45174198.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_232", server: bolder-metal-comma.glitch.me, port: 80, client-fingerprint: chrome, type: vmess, uuid: 83a5c82d-a047-418e-9ad9-6ce8c5aaba59, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: slime-rhinestone-spy.glitch.me, network: ws, ws-opts: {path: /83a5c82d-a047-418e-9ad9-6ce8c5aaba59-vmess, headers: {Host: bolder-metal-comma.glitch.me}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_233", server: us-ccs.yuji2022.eu.org, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us-ccs.yuji2022.eu.org, network: ws, ws-opts: {path: /XSjeg73o6ZdsheahCb5JG, headers: {Host: us-ccs.yuji2022.eu.org}}, udp: true}
+  - {name: "[VMess] US_234", server: 45.33.88.201, port: 18100, client-fingerprint: chrome, type: vmess, uuid: 0bf077d8431211ee8862f23c935fb936, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_235", server: 38.33.57.13, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.40023947.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_236", server: 172.67.138.140, port: 443, client-fingerprint: chrome, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: ivideos.sbs, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_238", server: 172.67.131.108, port: 443, client-fingerprint: chrome, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hms02.fxiaomi.sbs, network: ws, ws-opts: {path: /link}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇬🇧GB_239", server: 172.67.146.10, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: sareikela.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_240", server: cdnjs.com, port: 443, client-fingerprint: chrome, type: vmess, uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hdfy1c3.iraniancpi.uk, network: ws, ws-opts: {path: /QvtvPdDXXIlSdZMqnuxG, headers: {Host: cdnjs.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_241", server: 38.33.34.38, port: 36000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/273214272322}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_242", server: 173.245.58.5, port: 443, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: worker-flat-hat-00f2.ravapim426.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_243", server: 192.74.231.105, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.65320526.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_244", server: 38.33.57.17, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: www.40023947.xyz, network: ws, ws-opts: {path: /path/191019072927}, udp: true}
+  - {name: "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_245", server: 38.33.44.3, port: 38000, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/223322330623}, udp: true}
+  - {name: "[VMess] Pool_🇺🇸US_246", server: 137.175.40.104, port: 38001, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243102220518}, udp: true}
+  - {name: "[Trojan] 🇺🇸 Relay_🇺🇸US-🇺🇸US_248", server: j0111.ruixiangseo.xyz, port: 43002, client-fingerprint: chrome, type: trojan, password: 4CCF9A9AB80E9889198B02ECE7FA08DD, sni: j0111.ruixiangseo.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_249", server: 51.44.8.66, port: 16625, client-fingerprint: chrome, type: trojan, password: W4cjl(15295h, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_250", server: 18.222.168.15, port: 16615, client-fingerprint: chrome, type: trojan, password: deavF2TddpVa, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_251", server: 207.148.1.78, port: 443, client-fingerprint: chrome, type: trojan, password: wkmY1R4EcP, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_252", server: 43.202.2.100, port: 16617, client-fingerprint: chrome, type: trojan, password: ImG6EqEyWt2h, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_255", server: 35.170.70.31, port: 16643, client-fingerprint: chrome, type: trojan, password: e2bPAM53zq61, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_256", server: 34.219.70.122, port: 16626, client-fingerprint: chrome, type: trojan, password: z5vfZdMZrNIh, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_257", server: 34.208.215.79, port: 16616, client-fingerprint: chrome, type: trojan, password: ynvDgivJWtlk, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_259", server: 18.226.251.189, port: 16638, client-fingerprint: chrome, type: trojan, password: 27RWmUnbtkpY, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_260", server: 35.95.28.68, port: 16637, client-fingerprint: chrome, type: trojan, password: m5)j(XEbTGPd, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] US_262", server: 172.67.176.206, port: 2053, client-fingerprint: chrome, type: trojan, password: ZJU29smXwp, sni: damn-mci-again-3.danesh-bonyan.Store, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: damn-mci-again-3.danesh-bonyan.Store}}, udp: true}
+  - {name: "[Trojan] US_263", server: 3.83.152.204, port: 16620, client-fingerprint: chrome, type: trojan, password: olc5A8gU8ZXz, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: "[SS] ZZ_264", server: 23.157.40.20, port: 5500, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, tfo: false, udp: true}
+  - {name: "[SS] ZZ_266", server: 45.55.2.232, port: 14293, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: 2170f8, tfo: false, udp: true}
+  - {name: "[VMess] ZZ_269", server: 47.242.22.171, port: 28681, client-fingerprint: chrome, type: vmess, uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "[VMess] ZZ_270", server: 107.148.192.149, port: 41911, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_274", server: 104.16.68.38, port: 2052, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: worker-divine-hat-02d6.savofir317.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_275", server: 104.16.67.38, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: worker-divine-hat-02d6.savofir317.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇱🇺LU_276", server: cf.fovi.tk, port: 443, client-fingerprint: chrome, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: foxlux.fovi.tk, network: ws, ws-opts: {path: /eisasqa, headers: {Host: cf.fovi.tk}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇩🇪DE_277", server: 104.21.51.208, port: 443, client-fingerprint: chrome, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: linde06.indiavideo.sbs, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇹🇼TW_279", server: 104.19.47.180, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_280", server: 104.23.139.151, port: 443, client-fingerprint: chrome, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: worker-damp-duadwans.jevesoj131.workers.dev, network: ws, ws-opts: {path: /glweidf.cfd/linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇵🇱PL_281", server: speed.cloudflare.com, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: pl-a.yuji2022.eu.org, network: ws, ws-opts: {path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL, headers: {Host: speed.cloudflare.com}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_282", server: 104.16.61.8, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us-ccs.yuji2022.eu.org, network: ws, ws-opts: {path: /XSjeg73o6ZdsheahCb5JG}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_283", server: 104.25.44.30, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 6dfc2f4e-a7cf-370d-bc5a-572486a3cf0f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: 100-100-17-495.cn-db.top, network: ws, ws-opts: {path: /dabai.in104.25.44.30}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇫🇷FR_285", server: 104.21.48.84, port: 443, client-fingerprint: chrome, type: vmess, uuid: 4804f14b-c1f8-452d-a6ec-eff1490aeac9, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hdfy6c5.cpionline.co, network: ws, ws-opts: {path: /lRkGCkYS9X5GDNJYMWXN7kCm3lL}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇩🇪DE_286", server: 104.16.60.8, port: 2052, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: worker-mute-bar-1719.nifotok993.workers.dev, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇬🇧GB_287", server: 104.21.20.45, port: 80, client-fingerprint: chrome, type: vmess, uuid: 25f35e58-aab2-448e-871b-fa749ad06545, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: uk1-vmess.vpnhack.xyz, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇯🇵JP_288", server: jp-4-t2bh2lhv.2819v2rhzb56.download, port: 80, client-fingerprint: chrome, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: jp-4-t2bh2lhv.2819v2rhzb56.download, network: ws, ws-opts: {path: /, headers: {Host: jp-4-t2bh2lhv.2819v2rhzb56.download}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇳🇱NL_289", server: 104.18.23.19, port: 443, client-fingerprint: chrome, type: vmess, uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: hdfy4c1.freeairlaines.com, network: ws, ws-opts: {path: /WgCmp8pxRWBtLTlTL}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇯🇵JP_291", server: jp-3-t2bh2lhv.2819v2rhzb56.download, port: 80, client-fingerprint: chrome, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: jp-3-t2bh2lhv.2819v2rhzb56.download, network: ws, ws-opts: {path: /, headers: {Host: jp-3-t2bh2lhv.2819v2rhzb56.download}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_292", server: baobaojichang.bbjc.xyz, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 5f2f9755-9232-4147-892b-9d1f7dfacf19, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: riben.mojc.xyz, network: ws, ws-opts: {path: /, headers: {Host: baobaojichang.bbjc.xyz}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_293", server: 162.159.129.111, port: 2095, client-fingerprint: chrome, type: vmess, uuid: e9555d84-a146-4e36-9c23-eac28387be48, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip5.dtku47.xyz, network: ws, ws-opts: {path: /WNh8bXQv/}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_294", server: 104.21.83.208, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: afrhms16v.bestxray.buzz, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_297", server: www.speedtest.net, port: 80, client-fingerprint: chrome, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: us4e-20240111.v2freevpn.com, network: ws, ws-opts: {path: /v149-dskds65, headers: {Host: www.speedtest.net}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇸🇬SG_298", server: sg-1-pzz03vm5.2819v2rhzb56.download, port: 80, client-fingerprint: chrome, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: sg-1-pzz03vm5.2819v2rhzb56.download, network: ws, ws-opts: {path: /, headers: {Host: sg-1-pzz03vm5.2819v2rhzb56.download}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇹🇼TW_299", server: 104.19.47.53, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_306", server: hms07.xfixedfloat.cfd, port: 443, client-fingerprint: chrome, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: afrhms07.xfixedfloat.cfd, network: ws, ws-opts: {path: /linkws, headers: {Host: hms07.xfixedfloat.cfd}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_307", server: 104.21.42.39, port: 443, client-fingerprint: chrome, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: nezuko.raidenshogun.cloudns.org, network: ws, ws-opts: {path: /linkws/afrhms16v.bestxray.buzz}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_311", server: 104.16.148.244, port: 8080, client-fingerprint: chrome, type: vmess, uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip001.freegradely.xyz, network: ws, ws-opts: {path: /9aqOiXD2/}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇯🇵JP_313", server: 104.26.3.242, port: 443, client-fingerprint: chrome, type: vmess, uuid: 919e1a72-9720-3ea5-a9f8-80146afea7f7, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: tk-006.xiaoxiaobujidao.xyz, network: ws, ws-opts: {path: "/xiaodao?ed=2048"}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_315", server: 104.19.38.12, port: 8080, client-fingerprint: chrome, type: vmess, uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip001.freegradely.xyz, network: ws, ws-opts: {path: /9aqOiXD2/}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_316", server: 104.18.202.250, port: 2052, client-fingerprint: chrome, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇫🇷FR_318", server: 104.21.44.106, port: 443, client-fingerprint: chrome, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: xmivideo.cfd, network: ws, ws-opts: {path: /linkws}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇹🇼TW_320", server: 104.19.47.106, port: 8080, client-fingerprint: chrome, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: oiictw.yydsii.com, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇳🇱NL_321", server: nl-a.yuji2022.eu.org, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: nl-a.yuji2022.eu.org, network: ws, ws-opts: {path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2, headers: {Host: nl-a.yuji2022.eu.org}}, udp: true}
+  - {name: "[VMess] Relay_🏁ZZ-🇺🇸US_322", server: fbi.gov, port: 8080, client-fingerprint: chrome, type: vmess, uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, servername: ip001.freegradely.xyz, network: ws, ws-opts: {path: /9aqOiXD2/, headers: {Host: fbi.gov}}, udp: true}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -34,13 +280,503 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - DIRECT
+      - "[Vless] Relay_-🇰🇷KR_01"
+      - "[SS] _02"
+      - "[SS] _03"
+      - "[SS] _04"
+      - "[SS] _05"
+      - "[SS] _06"
+      - "[SS] _07"
+      - "[SS] _08"
+      - "[SS] _09"
+      - "[SS] _13"
+      - "[SS] _17"
+      - "[SS] _18"
+      - "[SS] _19"
+      - "[SS] _20"
+      - "[SS] _21"
+      - "[SS] _22"
+      - "[SS] _23"
+      - "[SS] _24"
+      - "[SS] _27"
+      - "[SS] _28"
+      - "[SS] _29"
+      - "[SS] _31"
+      - "[VMess] Relay_-🇹🇼TW_33"
+      - "[VMess] _34"
+      - "[VMess] _35"
+      - "[VMess] _36"
+      - "[VMess] _37"
+      - "[VMess] _38"
+      - "[Trojan] Pool__39"
+      - "[Trojan] Relay_-🇹🇼TW_40"
+      - "[Trojan] _41"
+      - "[Trojan] _42"
+      - "[SS] AF_43"
+      - "[Trojan] AF_44"
+      - "[SS] AL_45"
+      - "[SS] Relay_🇦🇴 AO-🇺🇸US_46"
+      - "[SS] AO_47"
+      - "[SS] AR_48"
+      - "[SS] AU_49"
+      - "[VMess] AU_50"
+      - "[VMess] AU_51"
+      - "[SS] AZ_52"
+      - "[SS] BA_53"
+      - "[SS] Relay_🇧🇩 BD-🇳🇱NL_54"
+      - "[VMess] Relay_🇧🇬BG-🇫🇷FR_56"
+      - "[VMess] Relay_🇧🇬BG-🇩🇪DE_57"
+      - "[SS] CA_58"
+      - "[SS] CA_61"
+      - "[Trojan] CA_62"
+      - "[Trojan] CA_63"
+      - "[Trojan] CA_64"
+      - "[Trojan] CA_65"
+      - "[Trojan] CA_66"
+      - "[VMess] CN_67"
+      - "[VMess] CN_68"
+      - "[VMess] Relay_🇨🇾CY-🇩🇪DE_69"
+      - "[VMess] Relay_🇨🇾CY-🇫🇷FR_70"
+      - "[SS] 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_72"
+      - "[VMess] DE_73"
+      - "[VMess] 🇩🇪 Relay_🇩🇪DE-🇺🇸US_75"
+      - "[Trojan] DE_76"
+      - "[Trojan] DE_77"
+      - "[Trojan] DE_78"
+      - "[Hysteria2] FR_79"
+      - "[Hysteria2] FR_82"
+      - "[SS] FR_87"
+      - "[VMess] FR_88"
+      - "[Trojan] FR_89"
+      - "[Trojan] FR_90"
+      - "[SS] GB_91"
+      - "[SS] 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_92"
+      - "[VMess] GB_93"
+      - "[VMess] GB_94"
+      - "[VMess] GB_95"
+      - "[Trojan] GB_96"
+      - "[Trojan] GB_97"
+      - "[Trojan] GB_98"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_99"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_100"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_101"
+      - "[Trojan] HK_102"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_103"
+      - "[Trojan] HK_104"
+      - "[Trojan] HK_105"
+      - "[Trojan] HK_106"
+      - "[SS] IE_107"
+      - "[VMess] IE_108"
+      - "[VMess] IN_109"
+      - "[SS] 🇯🇵 Relay_🇯🇵JP-🇦🇮AI_110"
+      - "[VMess] JP_112"
+      - "[Trojan] JP_113"
+      - "[Trojan] JP_114"
+      - "[Trojan] JP_115"
+      - "[Trojan] JP_116"
+      - "[VMess] KR_117"
+      - "[SS] KR_118"
+      - "[Trojan] KR_119"
+      - "[Trojan] KR_120"
+      - "[Trojan] KR_121"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_122"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_123"
+      - "[SS] LT_124"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_125"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_126"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_127"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇵🇱PL_128"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_129"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_130"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_131"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_132"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_133"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_134"
+      - "[SS] NO_135"
+      - "[SS] PT_136"
+      - "[SS] RU_137"
+      - "[SS] RU_138"
+      - "[SS] RU_139"
+      - "[VMess] Relay_🇸🇪SE-🇫🇷FR_140"
+      - "[VMess] Relay_🇸🇪SE-🇫🇷FR_141"
+      - "[Trojan] SE_142"
+      - "[Trojan] SE_143"
+      - "[SS] SG_144"
+      - "[VMess] SG_157"
+      - "[VMess] SG_158"
+      - "[VMess] SG_159"
+      - "[Trojan] SG_160"
+      - "[Trojan] SG_161"
+      - "[Trojan] SG_162"
+      - "[Trojan] SG_163"
+      - "[Trojan] SG_164"
+      - "[SS] TH_165"
+      - "[SS] TW_166"
+      - "[SS] US_167"
+      - "[SS] US_168"
+      - "[Hysteria2] US_169"
+      - "[SS] US_170"
+      - "[SS] US_171"
+      - "[SS] US_173"
+      - "[SS] US_175"
+      - "[SS] US_177"
+      - "[SS] US_178"
+      - "[SS] US_179"
+      - "[SS] US_180"
+      - "[SS] US_186"
+      - "[SS] US_187"
+      - "[SS] US_189"
+      - "[VMess] US_192"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_193"
+      - "[VMess] US_194"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_195"
+      - "[VMess] US_196"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_197"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇯🇵JP_198"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_199"
+      - "[VMess] US_200"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_201"
+      - "[VMess] US_203"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_204"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_205"
+      - "[VMess] US_206"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_207"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_208"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_209"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇵🇱PL_210"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_211"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_212"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_213"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_214"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_215"
+      - "[VMess] US_216"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇳🇱NL_217"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_218"
+      - "[VMess] US_219"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_220"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_221"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_222"
+      - "[VMess] Pool_🇺🇸US_223"
+      - "[VMess] US_224"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_225"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_226"
+      - "[VMess] US_227"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_228"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_229"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_230"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_231"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_232"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_233"
+      - "[VMess] US_234"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_235"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_236"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_238"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇬🇧GB_239"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_240"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_241"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_242"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_243"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_244"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_245"
+      - "[VMess] Pool_🇺🇸US_246"
+      - "[Trojan] 🇺🇸 Relay_🇺🇸US-🇺🇸US_248"
+      - "[Trojan] US_249"
+      - "[Trojan] US_250"
+      - "[Trojan] US_251"
+      - "[Trojan] US_252"
+      - "[Trojan] US_255"
+      - "[Trojan] US_256"
+      - "[Trojan] US_257"
+      - "[Trojan] US_259"
+      - "[Trojan] US_260"
+      - "[Trojan] US_262"
+      - "[Trojan] US_263"
+      - "[SS] ZZ_264"
+      - "[SS] ZZ_266"
+      - "[VMess] ZZ_269"
+      - "[VMess] ZZ_270"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_274"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_275"
+      - "[VMess] Relay_🏁ZZ-🇱🇺LU_276"
+      - "[VMess] Relay_🏁ZZ-🇩🇪DE_277"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_279"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_280"
+      - "[VMess] Relay_🏁ZZ-🇵🇱PL_281"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_282"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_283"
+      - "[VMess] Relay_🏁ZZ-🇫🇷FR_285"
+      - "[VMess] Relay_🏁ZZ-🇩🇪DE_286"
+      - "[VMess] Relay_🏁ZZ-🇬🇧GB_287"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_288"
+      - "[VMess] Relay_🏁ZZ-🇳🇱NL_289"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_291"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_292"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_293"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_294"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_297"
+      - "[VMess] Relay_🏁ZZ-🇸🇬SG_298"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_299"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_306"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_307"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_311"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_313"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_315"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_316"
+      - "[VMess] Relay_🏁ZZ-🇫🇷FR_318"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_320"
+      - "[VMess] Relay_🏁ZZ-🇳🇱NL_321"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_322"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DIRECT
+      - "[Vless] Relay_-🇰🇷KR_01"
+      - "[SS] _02"
+      - "[SS] _03"
+      - "[SS] _04"
+      - "[SS] _05"
+      - "[SS] _06"
+      - "[SS] _07"
+      - "[SS] _08"
+      - "[SS] _09"
+      - "[SS] _13"
+      - "[SS] _17"
+      - "[SS] _18"
+      - "[SS] _19"
+      - "[SS] _20"
+      - "[SS] _21"
+      - "[SS] _22"
+      - "[SS] _23"
+      - "[SS] _24"
+      - "[SS] _27"
+      - "[SS] _28"
+      - "[SS] _29"
+      - "[SS] _31"
+      - "[VMess] Relay_-🇹🇼TW_33"
+      - "[VMess] _34"
+      - "[VMess] _35"
+      - "[VMess] _36"
+      - "[VMess] _37"
+      - "[VMess] _38"
+      - "[Trojan] Pool__39"
+      - "[Trojan] Relay_-🇹🇼TW_40"
+      - "[Trojan] _41"
+      - "[Trojan] _42"
+      - "[SS] AF_43"
+      - "[Trojan] AF_44"
+      - "[SS] AL_45"
+      - "[SS] Relay_🇦🇴 AO-🇺🇸US_46"
+      - "[SS] AO_47"
+      - "[SS] AR_48"
+      - "[SS] AU_49"
+      - "[VMess] AU_50"
+      - "[VMess] AU_51"
+      - "[SS] AZ_52"
+      - "[SS] BA_53"
+      - "[SS] Relay_🇧🇩 BD-🇳🇱NL_54"
+      - "[VMess] Relay_🇧🇬BG-🇫🇷FR_56"
+      - "[VMess] Relay_🇧🇬BG-🇩🇪DE_57"
+      - "[SS] CA_58"
+      - "[SS] CA_61"
+      - "[Trojan] CA_62"
+      - "[Trojan] CA_63"
+      - "[Trojan] CA_64"
+      - "[Trojan] CA_65"
+      - "[Trojan] CA_66"
+      - "[VMess] CN_67"
+      - "[VMess] CN_68"
+      - "[VMess] Relay_🇨🇾CY-🇩🇪DE_69"
+      - "[VMess] Relay_🇨🇾CY-🇫🇷FR_70"
+      - "[SS] 🇩🇪 Relay_🇩🇪DE-🇩🇪DE_72"
+      - "[VMess] DE_73"
+      - "[VMess] 🇩🇪 Relay_🇩🇪DE-🇺🇸US_75"
+      - "[Trojan] DE_76"
+      - "[Trojan] DE_77"
+      - "[Trojan] DE_78"
+      - "[Hysteria2] FR_79"
+      - "[Hysteria2] FR_82"
+      - "[SS] FR_87"
+      - "[VMess] FR_88"
+      - "[Trojan] FR_89"
+      - "[Trojan] FR_90"
+      - "[SS] GB_91"
+      - "[SS] 🇬🇧 Relay_🇬🇧GB-🇬🇧GB_92"
+      - "[VMess] GB_93"
+      - "[VMess] GB_94"
+      - "[VMess] GB_95"
+      - "[Trojan] GB_96"
+      - "[Trojan] GB_97"
+      - "[Trojan] GB_98"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_99"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_100"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_101"
+      - "[Trojan] HK_102"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_103"
+      - "[Trojan] HK_104"
+      - "[Trojan] HK_105"
+      - "[Trojan] HK_106"
+      - "[SS] IE_107"
+      - "[VMess] IE_108"
+      - "[VMess] IN_109"
+      - "[SS] 🇯🇵 Relay_🇯🇵JP-🇦🇮AI_110"
+      - "[VMess] JP_112"
+      - "[Trojan] JP_113"
+      - "[Trojan] JP_114"
+      - "[Trojan] JP_115"
+      - "[Trojan] JP_116"
+      - "[VMess] KR_117"
+      - "[SS] KR_118"
+      - "[Trojan] KR_119"
+      - "[Trojan] KR_120"
+      - "[Trojan] KR_121"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_122"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_123"
+      - "[SS] LT_124"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_125"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_126"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_127"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇵🇱PL_128"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_129"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_130"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_131"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇫🇷FR_132"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇳🇱NL_133"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇩🇪DE_134"
+      - "[SS] NO_135"
+      - "[SS] PT_136"
+      - "[SS] RU_137"
+      - "[SS] RU_138"
+      - "[SS] RU_139"
+      - "[VMess] Relay_🇸🇪SE-🇫🇷FR_140"
+      - "[VMess] Relay_🇸🇪SE-🇫🇷FR_141"
+      - "[Trojan] SE_142"
+      - "[Trojan] SE_143"
+      - "[SS] SG_144"
+      - "[VMess] SG_157"
+      - "[VMess] SG_158"
+      - "[VMess] SG_159"
+      - "[Trojan] SG_160"
+      - "[Trojan] SG_161"
+      - "[Trojan] SG_162"
+      - "[Trojan] SG_163"
+      - "[Trojan] SG_164"
+      - "[SS] TH_165"
+      - "[SS] TW_166"
+      - "[SS] US_167"
+      - "[SS] US_168"
+      - "[Hysteria2] US_169"
+      - "[SS] US_170"
+      - "[SS] US_171"
+      - "[SS] US_173"
+      - "[SS] US_175"
+      - "[SS] US_177"
+      - "[SS] US_178"
+      - "[SS] US_179"
+      - "[SS] US_180"
+      - "[SS] US_186"
+      - "[SS] US_187"
+      - "[SS] US_189"
+      - "[VMess] US_192"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_193"
+      - "[VMess] US_194"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_195"
+      - "[VMess] US_196"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_197"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇯🇵JP_198"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_199"
+      - "[VMess] US_200"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_201"
+      - "[VMess] US_203"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_204"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_205"
+      - "[VMess] US_206"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_207"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_208"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_209"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇵🇱PL_210"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_211"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_212"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_213"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_214"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_215"
+      - "[VMess] US_216"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇳🇱NL_217"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_218"
+      - "[VMess] US_219"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_220"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_221"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_222"
+      - "[VMess] Pool_🇺🇸US_223"
+      - "[VMess] US_224"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_225"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_226"
+      - "[VMess] US_227"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_228"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_229"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_230"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_231"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_232"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_233"
+      - "[VMess] US_234"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_235"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_236"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_238"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇬🇧GB_239"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_240"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_241"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_242"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_243"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_244"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_245"
+      - "[VMess] Pool_🇺🇸US_246"
+      - "[Trojan] 🇺🇸 Relay_🇺🇸US-🇺🇸US_248"
+      - "[Trojan] US_249"
+      - "[Trojan] US_250"
+      - "[Trojan] US_251"
+      - "[Trojan] US_252"
+      - "[Trojan] US_255"
+      - "[Trojan] US_256"
+      - "[Trojan] US_257"
+      - "[Trojan] US_259"
+      - "[Trojan] US_260"
+      - "[Trojan] US_262"
+      - "[Trojan] US_263"
+      - "[SS] ZZ_264"
+      - "[SS] ZZ_266"
+      - "[VMess] ZZ_269"
+      - "[VMess] ZZ_270"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_274"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_275"
+      - "[VMess] Relay_🏁ZZ-🇱🇺LU_276"
+      - "[VMess] Relay_🏁ZZ-🇩🇪DE_277"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_279"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_280"
+      - "[VMess] Relay_🏁ZZ-🇵🇱PL_281"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_282"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_283"
+      - "[VMess] Relay_🏁ZZ-🇫🇷FR_285"
+      - "[VMess] Relay_🏁ZZ-🇩🇪DE_286"
+      - "[VMess] Relay_🏁ZZ-🇬🇧GB_287"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_288"
+      - "[VMess] Relay_🏁ZZ-🇳🇱NL_289"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_291"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_292"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_293"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_294"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_297"
+      - "[VMess] Relay_🏁ZZ-🇸🇬SG_298"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_299"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_306"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_307"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_311"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_313"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_315"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_316"
+      - "[VMess] Relay_🏁ZZ-🇫🇷FR_318"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_320"
+      - "[VMess] Relay_🏁ZZ-🇳🇱NL_321"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_322"
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -246,27 +982,170 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - DIRECT
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_99"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_100"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_101"
+      - "[Trojan] HK_102"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_103"
+      - "[Trojan] HK_104"
+      - "[Trojan] HK_105"
+      - "[Trojan] HK_106"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_197"
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - DIRECT
+      - "[SS] 🇯🇵 Relay_🇯🇵JP-🇦🇮AI_110"
+      - "[VMess] JP_112"
+      - "[Trojan] JP_113"
+      - "[Trojan] JP_114"
+      - "[Trojan] JP_115"
+      - "[Trojan] JP_116"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇯🇵JP_198"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_288"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_291"
+      - "[VMess] Relay_🏁ZZ-🇯🇵JP_313"
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - DIRECT
+      - "[SS] Relay_🇦🇴 AO-🇺🇸US_46"
+      - "[VMess] 🇩🇪 Relay_🇩🇪DE-🇺🇸US_75"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_99"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_100"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_101"
+      - "[Trojan] 🇭🇰 Relay_🇭🇰HK-🇺🇸US_103"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_126"
+      - "[VMess] 🇳🇱 Relay_🇳🇱NL-🇺🇸US_127"
+      - "[SS] US_167"
+      - "[SS] US_168"
+      - "[Hysteria2] US_169"
+      - "[SS] US_170"
+      - "[SS] US_171"
+      - "[SS] US_173"
+      - "[SS] US_175"
+      - "[SS] US_177"
+      - "[SS] US_178"
+      - "[SS] US_179"
+      - "[SS] US_180"
+      - "[SS] US_186"
+      - "[SS] US_187"
+      - "[SS] US_189"
+      - "[VMess] US_192"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_193"
+      - "[VMess] US_194"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_195"
+      - "[VMess] US_196"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_197"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇯🇵JP_198"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_199"
+      - "[VMess] US_200"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_201"
+      - "[VMess] US_203"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_204"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_205"
+      - "[VMess] US_206"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_207"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇫🇷FR_208"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_209"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇵🇱PL_210"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_211"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_212"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_213"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_214"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_215"
+      - "[VMess] US_216"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇳🇱NL_217"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_218"
+      - "[VMess] US_219"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_220"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_221"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_222"
+      - "[VMess] Pool_🇺🇸US_223"
+      - "[VMess] US_224"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_225"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_226"
+      - "[VMess] US_227"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_228"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_229"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_230"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_231"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_232"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_233"
+      - "[VMess] US_234"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_235"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_236"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_238"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇬🇧GB_239"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇩🇪DE_240"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_241"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_242"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_243"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_244"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇺🇸US_245"
+      - "[VMess] Pool_🇺🇸US_246"
+      - "[Trojan] 🇺🇸 Relay_🇺🇸US-🇺🇸US_248"
+      - "[Trojan] US_249"
+      - "[Trojan] US_250"
+      - "[Trojan] US_251"
+      - "[Trojan] US_252"
+      - "[Trojan] US_255"
+      - "[Trojan] US_256"
+      - "[Trojan] US_257"
+      - "[Trojan] US_259"
+      - "[Trojan] US_260"
+      - "[Trojan] US_262"
+      - "[Trojan] US_263"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_274"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_275"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_280"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_282"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_283"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_292"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_293"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_294"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_297"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_306"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_307"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_311"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_315"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_316"
+      - "[VMess] Relay_🏁ZZ-🇺🇸US_322"
   - name: 🇸🇬 新加坡节点
     type: select
     proxies:
-      - DIRECT
+      - "[SS] SG_144"
+      - "[VMess] SG_157"
+      - "[VMess] SG_158"
+      - "[VMess] SG_159"
+      - "[Trojan] SG_160"
+      - "[Trojan] SG_161"
+      - "[Trojan] SG_162"
+      - "[Trojan] SG_163"
+      - "[Trojan] SG_164"
+      - "[VMess] Relay_🏁ZZ-🇸🇬SG_298"
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - DIRECT
+      - "[VMess] Relay_-🇹🇼TW_33"
+      - "[Trojan] Relay_-🇹🇼TW_40"
+      - "[SS] TW_166"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_201"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_209"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_211"
+      - "[VMess] 🇺🇸 Relay_🇺🇸US-🇹🇼TW_230"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_279"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_299"
+      - "[VMess] Relay_🏁ZZ-🇹🇼TW_320"
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - DIRECT
+      - "[Vless] Relay_-🇰🇷KR_01"
+      - "[VMess] KR_117"
+      - "[SS] KR_118"
+      - "[Trojan] KR_119"
+      - "[Trojan] KR_120"
+      - "[Trojan] KR_121"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_122"
+      - "[Trojan] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_123"
   - name: 🎥 奈飞节点
     type: select
     proxies:
