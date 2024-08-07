@@ -17,27 +17,27 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_368", server: mr.moonriver.sbs, port: 32065, client-fingerprint: chrome, type: hysteria2, password: 19cfd418-f845-43a6-9c96-d89645e1bbb3, auth: 19cfd418-f845-43a6-9c96-d89645e1bbb3, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria] Pool_🇺🇸US_455", server: 173.234.25.52, port: 48919, client-fingerprint: chrome, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 55, down: 110, fast-open: false, protocol: udp, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: "[Hysteria2] US_457", server: 74.48.134.235, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_556", server: mr.moonriver.sbs, port: 32065, client-fingerprint: chrome, type: hysteria2, password: 19cfd418-f845-43a6-9c96-d89645e1bbb3, auth: 19cfd418-f845-43a6-9c96-d89645e1bbb3, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_657", server: 74.48.134.235, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_658", server: 207.90.239.157, port: 15669, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_368"
-      - "[Hysteria] Pool_🇺🇸US_455"
-      - "[Hysteria2] US_457"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_556"
+      - "[Hysteria2] US_657"
+      - "[Hysteria2] US_658"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_368"
-      - "[Hysteria] Pool_🇺🇸US_455"
-      - "[Hysteria2] US_457"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_556"
+      - "[Hysteria2] US_657"
+      - "[Hysteria2] US_658"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -55,9 +55,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_368"
-      - "[Hysteria] Pool_🇺🇸US_455"
-      - "[Hysteria2] US_457"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_556"
+      - "[Hysteria2] US_657"
+      - "[Hysteria2] US_658"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
