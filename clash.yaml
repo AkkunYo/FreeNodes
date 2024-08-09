@@ -17,39 +17,30 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] US_644", server: 108.181.24.39, port: 60714, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_727", server: jp01.pochan.868891.xyz, port: 55556, client-fingerprint: chrome, type: hysteria2, password: 8225986b-4c13-4deb-9cde-321405dc8a97, auth: 8225986b-4c13-4deb-9cde-321405dc8a97, sni: jp01.pochan.868891.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_740", server: kr01.pochan.868891.xyz, port: 15062, client-fingerprint: chrome, type: hysteria2, password: 8225986b-4c13-4deb-9cde-321405dc8a97, auth: 8225986b-4c13-4deb-9cde-321405dc8a97, sni: kr01.pochan.868891.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_829", server: hyhk02.pochan.868891.xyz, port: 20000, client-fingerprint: chrome, type: hysteria2, password: f1100511-eceb-4c6c-b47c-e0498865b5a5, auth: f1100511-eceb-4c6c-b47c-e0498865b5a5, sni: hyhk02.pochan.868891.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_830", server: hyhk01.pochan.868891.xyz, port: 20000, client-fingerprint: chrome, type: hysteria2, password: 8225986b-4c13-4deb-9cde-321405dc8a97, auth: 8225986b-4c13-4deb-9cde-321405dc8a97, sni: hyhk01.pochan.868891.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] US_870", server: 207.90.239.157, port: 15669, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] US_871", server: 74.48.134.235, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_SG", server: 141.98.196.126, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_SG 2", server: 185.151.146.128, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_945", server: 108.181.24.39, port: 60714, client-fingerprint: chrome, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_946", server: 74.48.134.235, port: 9443, client-fingerprint: chrome, type: hysteria2, password: 123456, auth: 123456, sni: bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] US_644"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_727"
-      - "[Hysteria2] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_740"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_829"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_830"
-      - "[Hysteria2] US_870"
-      - "[Hysteria2] US_871"
+      - "[Hysteria2] disney_SG"
+      - "[Hysteria2] disney_SG 2"
+      - "[Hysteria2] US_945"
+      - "[Hysteria2] US_946"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] US_644"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_727"
-      - "[Hysteria2] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_740"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_829"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_830"
-      - "[Hysteria2] US_870"
-      - "[Hysteria2] US_871"
+      - "[Hysteria2] disney_SG"
+      - "[Hysteria2] disney_SG 2"
+      - "[Hysteria2] US_945"
+      - "[Hysteria2] US_946"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,13 +58,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] US_644"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_727"
-      - "[Hysteria2] 🇰🇷 Relay_🇰🇷KR-🇰🇷KR_740"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_829"
-      - "[Hysteria2] Relay_🇹🇷TR-🇹🇷TR_830"
-      - "[Hysteria2] US_870"
-      - "[Hysteria2] US_871"
+      - "[Hysteria2] disney_SG"
+      - "[Hysteria2] disney_SG 2"
+      - "[Hysteria2] US_945"
+      - "[Hysteria2] US_946"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
