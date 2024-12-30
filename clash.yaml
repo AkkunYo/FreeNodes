@@ -17,21 +17,33 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] US_654", server: 166.1.18.244, port: 26699, client-fingerprint: chrome, type: hysteria2, password: 95c2b673-d899-4ff4-a6c1-eafa74268a5e, auth: 95c2b673-d899-4ff4-a6c1-eafa74268a5e, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Pool_🇸🇬SG_389", server: 52.187.5.16, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_390", server: api.tg8lnk.tech, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_391", server: 52.163.114.191, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_405", server: tw3.akebi.cc, port: 2010, client-fingerprint: chrome, type: hysteria2, password: 338b9800-fb4d-4934-8425-388f6d4342f5, auth: 338b9800-fb4d-4934-8425-388f6d4342f5, sni: hk02.akebi.cc, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] US_545", server: 166.1.18.244, port: 26699, client-fingerprint: chrome, type: hysteria2, password: 95c2b673-d899-4ff4-a6c1-eafa74268a5e, auth: 95c2b673-d899-4ff4-a6c1-eafa74268a5e, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] US_654"
+      - "[Hysteria2] Pool_🇸🇬SG_389"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_390"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_391"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_405"
+      - "[Hysteria2] US_545"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] US_654"
+      - "[Hysteria2] Pool_🇸🇬SG_389"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_390"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_391"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_405"
+      - "[Hysteria2] US_545"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -49,7 +61,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] US_654"
+      - "[Hysteria2] Pool_🇸🇬SG_389"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_390"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_391"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_405"
+      - "[Hysteria2] US_545"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
