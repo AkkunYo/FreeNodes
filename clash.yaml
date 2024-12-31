@@ -17,27 +17,27 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_441", server: api.tg8lnk.tech, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_442", server: 52.163.114.191, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Pool_🇸🇬SG_443", server: 52.187.5.16, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233", server: 52.163.114.191, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234", server: api.tg8lnk.tech, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Pool_🇸🇬SG_235", server: 52.187.5.16, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_441"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_442"
-      - "[Hysteria2] Pool_🇸🇬SG_443"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
+      - "[Hysteria2] Pool_🇸🇬SG_235"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_441"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_442"
-      - "[Hysteria2] Pool_🇸🇬SG_443"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
+      - "[Hysteria2] Pool_🇸🇬SG_235"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -55,9 +55,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_441"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_442"
-      - "[Hysteria2] Pool_🇸🇬SG_443"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
+      - "[Hysteria2] Pool_🇸🇬SG_235"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
