@@ -17,27 +17,45 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233", server: 52.163.114.191, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234", server: api.tg8lnk.tech, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] Pool_🇸🇬SG_235", server: 52.187.5.16, port: 443, client-fingerprint: chrome, type: hysteria2, password: ThisIsNotForSale-Free$ervice, auth: ThisIsNotForSale-Free$ervice, sni: api.tg8lnk.tech, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇭🇷HR_332", server: hr.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: hr.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_333", server: es.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: es.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇰DK_334", server: dk.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: dk.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_335", server: ae.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: ae.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_344", server: tw3.akebi.cc, port: 2010, client-fingerprint: chrome, type: hysteria2, password: 338b9800-fb4d-4934-8425-388f6d4342f5, auth: 338b9800-fb4d-4934-8425-388f6d4342f5, sni: hk02.akebi.cc, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_510", server: fr1.xiaoliyu.us, port: 2052, client-fingerprint: chrome, type: hysteria2, password: 547e05a0-2e59-4712-b9f9-dedb10293d83, auth: 547e05a0-2e59-4712-b9f9-dedb10293d83, sni: fr1.xiaoliyu.us, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_511", server: hk.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: hk.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇮🇩ID_512", server: id.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: id.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇹🇭TH_513", server: th.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: th.1010520.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
-      - "[Hysteria2] Pool_🇸🇬SG_235"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇭🇷HR_332"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_333"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇰DK_334"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_335"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_344"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_510"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_511"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇮🇩ID_512"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇹🇭TH_513"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
-      - "[Hysteria2] Pool_🇸🇬SG_235"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇭🇷HR_332"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_333"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇰DK_334"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_335"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_344"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_510"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_511"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇮🇩ID_512"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇹🇭TH_513"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -55,9 +73,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_233"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇸🇬SG_234"
-      - "[Hysteria2] Pool_🇸🇬SG_235"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇭🇷HR_332"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_333"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇰DK_334"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_335"
+      - "[Hysteria2] 🇹🇼 Relay_🇹🇼TW-🇭🇰HK_344"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇺🇸US_510"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇭🇰HK_511"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇮🇩ID_512"
+      - "[Hysteria2] 🇺🇸 Relay_🇺🇸US-🇹🇭TH_513"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
