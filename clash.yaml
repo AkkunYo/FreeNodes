@@ -17,24 +17,24 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_512", server: es.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: es.1010520.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_513", server: ae.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: ae.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_454", server: ae.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: ae.1010520.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_455", server: es.1010520.xyz, port: 1001, client-fingerprint: chrome, type: hysteria2, password: d5905353-0efe-47a0-90e8-276991af4c87, auth: d5905353-0efe-47a0-90e8-276991af4c87, sni: es.1010520.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_512"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_513"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_454"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_455"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_512"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_513"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_454"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_455"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -52,8 +52,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_512"
-      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_513"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇦🇪AE_454"
+      - "[Hysteria2] 🇸🇬 Relay_🇸🇬SG-🇩🇪DE_455"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
