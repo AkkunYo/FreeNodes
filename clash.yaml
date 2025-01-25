@@ -17,21 +17,21 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] FR_480", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_767", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] FR_480"
+      - "[Hysteria2] FR_767"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] FR_480"
+      - "[Hysteria2] FR_767"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -49,7 +49,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] FR_480"
+      - "[Hysteria2] FR_767"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
