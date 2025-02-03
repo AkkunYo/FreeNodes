@@ -17,39 +17,39 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_775", server: br.huafei888.site, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] FR_847", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] HK_925", server: 203.23.128.167, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_926", server: hhhk.naisicloud.xyz, port: 35600, client-fingerprint: chrome, type: hysteria2, password: d339c345-6514-4f6b-8c44-30dd29c74b39, auth: d339c345-6514-4f6b-8c44-30dd29c74b39, sni: hhhk.naisicloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] HK_927", server: 62.72.163.215, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_952", server: rb2.xiaofeixia.cyou, port: 2052, client-fingerprint: chrome, type: hysteria2, password: 92dc14c5-e2b0-41bc-9827-1b687295c530, auth: 92dc14c5-e2b0-41bc-9827-1b687295c530, sni: rb2.xiaofeixia.cyou, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_953", server: rb1.xiaofeixia.cyou, port: 2052, client-fingerprint: chrome, type: hysteria2, password: 92dc14c5-e2b0-41bc-9827-1b687295c530, auth: 92dc14c5-e2b0-41bc-9827-1b687295c530, sni: rb1.xiaofeixia.cyou, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_964", server: br.huafei888.site, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_1046", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] HK_1154", server: 62.72.163.215, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1155", server: hhhk.naisicloud.xyz, port: 35600, client-fingerprint: chrome, type: hysteria2, password: d339c345-6514-4f6b-8c44-30dd29c74b39, auth: d339c345-6514-4f6b-8c44-30dd29c74b39, sni: hhhk.naisicloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] HK_1156", server: 203.23.128.167, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1186", server: rb1.xiaofeixia.cyou, port: 2052, client-fingerprint: chrome, type: hysteria2, password: 92dc14c5-e2b0-41bc-9827-1b687295c530, auth: 92dc14c5-e2b0-41bc-9827-1b687295c530, sni: rb1.xiaofeixia.cyou, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1187", server: rb2.xiaofeixia.cyou, port: 2052, client-fingerprint: chrome, type: hysteria2, password: 92dc14c5-e2b0-41bc-9827-1b687295c530, auth: 92dc14c5-e2b0-41bc-9827-1b687295c530, sni: rb2.xiaofeixia.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_775"
-      - "[Hysteria2] FR_847"
-      - "[Hysteria2] HK_925"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_926"
-      - "[Hysteria2] HK_927"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_952"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_953"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_964"
+      - "[Hysteria2] FR_1046"
+      - "[Hysteria2] HK_1154"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1155"
+      - "[Hysteria2] HK_1156"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1186"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1187"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_775"
-      - "[Hysteria2] FR_847"
-      - "[Hysteria2] HK_925"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_926"
-      - "[Hysteria2] HK_927"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_952"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_953"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_964"
+      - "[Hysteria2] FR_1046"
+      - "[Hysteria2] HK_1154"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1155"
+      - "[Hysteria2] HK_1156"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1186"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1187"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -67,13 +67,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_775"
-      - "[Hysteria2] FR_847"
-      - "[Hysteria2] HK_925"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_926"
-      - "[Hysteria2] HK_927"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_952"
-      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_953"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_964"
+      - "[Hysteria2] FR_1046"
+      - "[Hysteria2] HK_1154"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1155"
+      - "[Hysteria2] HK_1156"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1186"
+      - "[Hysteria2] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1187"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
