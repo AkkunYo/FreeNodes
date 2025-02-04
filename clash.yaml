@@ -17,33 +17,33 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_966", server: br.huafei888.site, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] FR_1065", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] HK_1177", server: 62.72.163.215, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] HK_1178", server: 203.23.128.167, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
-  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1179", server: hhhk.naisicloud.xyz, port: 35600, client-fingerprint: chrome, type: hysteria2, password: d339c345-6514-4f6b-8c44-30dd29c74b39, auth: d339c345-6514-4f6b-8c44-30dd29c74b39, sni: hhhk.naisicloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_765", server: br.huafei888.site, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] FR_838", server: 51.158.148.53, port: 8080, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_908", server: hhhk.naisicloud.xyz, port: 35600, client-fingerprint: chrome, type: hysteria2, password: d339c345-6514-4f6b-8c44-30dd29c74b39, auth: d339c345-6514-4f6b-8c44-30dd29c74b39, sni: hhhk.naisicloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] HK_909", server: 203.23.128.167, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
+  - {name: "[Hysteria2] disney_HK", server: 62.72.163.215, port: 80, client-fingerprint: chrome, type: hysteria2, password: a0605527-28e4-449c-80ee-5642cc16a8af, auth: a0605527-28e4-449c-80ee-5642cc16a8af, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_966"
-      - "[Hysteria2] FR_1065"
-      - "[Hysteria2] HK_1177"
-      - "[Hysteria2] HK_1178"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1179"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_765"
+      - "[Hysteria2] FR_838"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_908"
+      - "[Hysteria2] HK_909"
+      - "[Hysteria2] disney_HK"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_966"
-      - "[Hysteria2] FR_1065"
-      - "[Hysteria2] HK_1177"
-      - "[Hysteria2] HK_1178"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1179"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_765"
+      - "[Hysteria2] FR_838"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_908"
+      - "[Hysteria2] HK_909"
+      - "[Hysteria2] disney_HK"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -61,11 +61,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_966"
-      - "[Hysteria2] FR_1065"
-      - "[Hysteria2] HK_1177"
-      - "[Hysteria2] HK_1178"
-      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_1179"
+      - "[Hysteria2] Relay_🇧🇷BR-🇧🇷BR_765"
+      - "[Hysteria2] FR_838"
+      - "[Hysteria2] 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_908"
+      - "[Hysteria2] HK_909"
+      - "[Hysteria2] disney_HK"
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
